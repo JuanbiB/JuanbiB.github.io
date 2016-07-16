@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function changeit() {
+            document.getElementById("id1").innerHTML= "Or is it?";
+        }
+    </script>
 
-    <script src="js/respond.js"></script>
 </head>
 
 <style>
@@ -19,14 +23,15 @@
         border-bottom: 2px solid black;
     }
 
-    .text{
-        font-size: 15px;
+    #text{
+        font-size: 17px;
         border: 1px solid black;
        padding: 10px;
+       
     }
 
     header {
-        font-size: 20px;
+        font-size: 50px;
         color: cadetblue;
         text-align: center;
         padding: 20px;
@@ -34,7 +39,7 @@
 
     .pic1 {
         max-width: 30%;
-        border: 2px solid black;
+        
         display: block;
         margin: 0 auto;
         padding: inherit;     
@@ -55,23 +60,24 @@
         
     </style>
 
-
-    
 <body>
+    <div class="container">
+        <div class="jumbotron">
+            <header> Welcome! </header>
+        </div>
+        
+        <div>
+            <h1> Web Dev </h1>
+                <p id="id1"> Is pretty fun. </p>
+                <button type="button" onclick="changeit()"> I'm a button! </button>
+        </div>
+   
+        <br>
+        <img src="http://dailygenius.com/wp-content/uploads/2015/04/coding_my_life_away_by_izzuthug-d4dgn1d.png" class="pic1 col-ls-6">
+        <br>      
     
-   <header> Welcome! </header>
+        <p id="text"> I know, very rudimentary. Currently teaching myself web design (on top of my 2 Cs courses). Let's see.</p>
+     </div><!-- Container -->
 
-
-<!-- javascript -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-    <button type="button" class="btn btn-primary col-xs-12"> I am a button. </button>
-    <span> </span>
-    <img src="http://www.pbs.org/newshour/wp-content/uploads/2015/03/coding.jpg" class="pic1 col-ls-6">
-    <span> </span>
-  
-    <p class="text"> I know, very rudimentary. Currently teaching myself web design (on top of my 2 Cs courses). </p>
-    
 </body>
 </html>
