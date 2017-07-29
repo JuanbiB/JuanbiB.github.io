@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "ballin.data.unityweb",
+"asmCodeUrl": "ballin.asm.code.unityweb",
+"asmMemoryUrl": "ballin.asm.memory.unityweb",
+"asmFrameworkUrl": "ballin.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
