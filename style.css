@@ -1,0 +1,207 @@
+#intro {
+	width:100%;
+	height: 650px;
+	margin: auto;
+	background-color: #181F1C;
+	position: relative;
+	text-align: center;
+}
+
+#intro h1 {
+	font-family: 'Righteous', cursive;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 100px; 
+	color: #E16036;
+	text-shadow: 3px 3px #E3170A;
+}
+
+#intro p {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 200px;
+	color: #D6CBC1;
+}
+
+
+#intro h2 {
+	font-size: 1.5em;
+	background: #f2f2f2;
+	text-shadow: 0 1px 0 white; 
+	color: #E8E5DA;
+}
+
+
+#intro a {
+	color: #E8E5DA;
+	text-decoration: none;
+
+}
+
+
+#intro a:hover {
+	color: #333333;
+	text-decoration: none;
+}
+
+
+#about {
+	width:100%;
+	height: 650px;
+	margin: auto;
+	background-color: #121212;
+	text-align: center;
+}
+
+#about h1 {
+	padding-left: 30px;
+	padding-top: 30px;
+	font-family: 'Fjalla One', sans-serif;
+	color: #e16036;
+	font-size: 70px;
+	float: left;
+
+}
+
+
+
+#about img {
+	width: 47%;
+	float: right;
+}
+
+.hline-bottom {
+	padding-left: 40px;
+	padding-top: 150px;
+	border-bottom: 2px solid #e3170a; /* whichever color you prefer */
+	width: 400px;
+}
+
+.aboutText {
+	width: 600px;
+	height: 400px;
+}
+
+.aboutText p {
+	font-family: 'Raleway', sans-serif;
+	word-wrap: break-word;
+	color: #ffffff;
+	text-align: left;
+	padding-left: 30px;
+	padding-top: 30px;
+
+}
+
+
+
+#projects {
+	width:100%;
+	height: 700px;
+	margin: auto;
+	background-color: #181F1C;
+	position: relative;
+	text-align: center;
+}
+
+#projects h1 {
+	padding-right: 30px;
+	font-family: 'Fjalla One', sans-serif;
+	color: #e16036;
+	font-size: 70px;
+	padding-bottom: 10px;
+}
+
+#projects h2 {
+	padding-top: -30px;
+	font-size: 30px;
+	color: white;
+
+}
+
+
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	background: #131313;
+	align-content: center;
+	display: block;
+
+}
+
+
+.icon {
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+.text p {
+	word-wrap: break-word;
+	width: 550px;
+	padding-left: 30px;
+	text-align: left;
+	color: white;
+} 
+
+.container {
+	position: relative;
+	width: 50%;
+
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+.gamesIcon {
+	padding-left: 150px;
+}
+
+.gameInfo {
+	width: 350px;
+	height: 400px;
+	background: #131313;
+
+}
+
+.move {
+	padding-left: 40px;
+}
+
+#contact {
+	width:100%;
+	height: 250px;
+	margin: auto;
+	background-color: #121212;
+
+}
+
+#contact h1 {
+	float: right;
+	font-family: 'Righteous', cursive;
+	font-size: 150px; 
+	color: #34653c;
+	text-shadow: 3px 3px #E3170A;
+	padding-right: 50px;
+	padding-top: 10px;
+}
+
+#contact img {
+	width: 200px;
+}
+
+.iconz {
+	display:inline-block;
+	padding: 30px;
+	padding-left: 10px;
+}
+
+
+
+
