@@ -1,52 +1,175 @@
-#intro {
-	width:100%;
-	height: 650px;
-	margin: auto;
-	background-color: #181F1C;
-	position: relative;
-	text-align: center;
+/**
+------------------------------------------------------------------------- WARM OSCAR
+**/
+
+
+.warmOscar {
+	height: 100%;
+	width: 100%;
+	text-align:center;
+	background-color: #2a3430;
 }
 
-#intro h1 {
+
+.warmOscar h2 {
+	-webkit-transform: translateY(50%);
 	font-family: 'Righteous', cursive;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 100px; 
+	font-size: 75px; 
 	color: #E16036;
 	text-shadow: 3px 3px #E3170A;
 }
 
-#intro p {
+.warmOscar h2 span {
+	display:inline-block;
+	font-weight: 900;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+.warmOscar p {
+	opacity: 0;
+	max-width: 80%;
+	margin:0 auto;
+	-webkit-transform: scale(.5);
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
-	text-align: center;
+	color: #fff;
+	padding-bottom: 10px;
+}
+
+.warmOscar i {
+	color: white;
+	opacity: 0;
+	margin:0 auto;
+	-webkit-transform: scale(.5);
+	position: absolute;
+
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#introduction a span {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+}
+
+.warmOscar .absoluteCenter {
+	width: 100%;
+	padding: 3rem;
+	/* border: 1px solid white; */
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	letter-spacing: -.025em;
+	line-height: 1.5em;
+	z-index: 1;
+}
+
+.warmOscar::before {
+	content:'';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color: rgba(0,0,0,.5);
+}
+
+.warmOscar::after {
+	content:'';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100%;
+	border: 1px solid white;
+	opacity: 0;
+	-webkit-transform: scale(.5);
+}
+
+.warmOscar:hover::before {
+	opacity: 0;
+}
+
+.warmOscar:hover::after {
+	opacity: 1;
+	-webkit-transform: scale(.8);
+	background-color: rgba(0,0,0,.3);
+}
+
+.warmOscar:hover h2 {
+	-webkit-transform: none;
+}
+
+.warmOscar:hover p {
+	opacity: 1;
+	-webkit-transform: none;
+}
+
+.warmOscar:hover i {
+	opacity: 1;
+	-webkit-transform: none;
+}
+/**
+---------------------------------------------------------------------- WARM OSCAR
+**/
+
+
+.button {
+	display: inline-block;
+	padding: 1em;
+	background-color: #79BD9A;
+	text-decoration: none;
+	color: white;
+}
+
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	75% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+@keyframes hvr-pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	75% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+.hvr-pulse {
+	display: inline-block;
 	vertical-align: middle;
-	padding-top: 200px;
-	color: #D6CBC1;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+	-webkit-animation-name: hvr-pulse;
+	animation-name: hvr-pulse;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 }
 
-
-#intro h2 {
-	font-size: 1.5em;
-	background: #f2f2f2;
-	text-shadow: 0 1px 0 white; 
-	color: #E8E5DA;
-}
-
-
-#intro a {
-	color: #E8E5DA;
-	text-decoration: none;
-
-}
-
-
-#intro a:hover {
-	color: #333333;
-	text-decoration: none;
-}
-
-
+/*
+------------- ABOUT SECTION --------------
+*/
 #about {
 	width:100%;
 	height: 650px;
@@ -75,7 +198,7 @@
 .hline-bottom {
 	padding-left: 40px;
 	padding-top: 150px;
-	border-bottom: 2px solid #e3170a; /* whichever color you prefer */
+	border-bottom: 2px solid #ed675f; /* whichever color you prefer */
 	width: 400px;
 }
 
@@ -114,9 +237,20 @@
 }
 
 #projects h2 {
-	padding-top: -30px;
+	padding-top: 30px;
 	font-size: 30px;
 	color: white;
+}
+
+#projects p {
+		font-family: 'Raleway', sans-serif;
+	word-wrap: break-word;
+	color: #ffffff;
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-top: 10px;
 
 }
 
@@ -138,13 +272,7 @@
 	padding-top: 30px;
 }
 
-.text p {
-	word-wrap: break-word;
-	width: 550px;
-	padding-left: 30px;
-	text-align: left;
-	color: white;
-} 
+
 
 .container {
 	position: relative;
@@ -165,7 +293,7 @@
 
 .gameInfo {
 	width: 350px;
-	height: 400px;
+	height: 430px;
 	background: #131313;
 
 }
@@ -204,4 +332,16 @@
 
 
 
+*, *:after, *:before {
+	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-transition: all .6s ease;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
 
