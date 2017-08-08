@@ -26,6 +26,16 @@
 	border-bottom: 2px solid white;
 }
 
+.warmOscar img {
+	-webkit-transform: translateY(50%);
+
+}
+
+.warmOscar:hover img {
+		-webkit-transform: none;
+
+}
+
 .warmOscar p {
 	opacity: 0;
 	max-width: 80%;
