@@ -1,3 +1,9 @@
+.container-fluid {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
 /**
 ------------------------------------------------------------------------- WARM OSCAR
 **/
@@ -302,7 +308,7 @@
 }
 
 #contact h1 {
-	float: right;
+	float: left;
 	font-family: 'Righteous', cursive;
 	font-size: 150px; 
 	color: #34653c;
@@ -311,16 +317,28 @@
 	padding-top: 10px;
 }
 
-#contact img {
-	width: 200px;
+
+.links {
+	padding-top: 60px;
+	padding-right: 60px;
+	float: right;
 }
 
-.iconz {
-	display:inline-block;
-	padding: 30px;
-	padding-left: 10px;
+.links p {
+	font-size: 30px;
+	color: #7c7c7c;
+		font-family: 'Lato', sans-serif;
+
 }
 
+.links a:hover {
+	color:#E3170A;
+	text-decoration: none;
+}
+
+.links a {
+	color: #34653c;
+}
 
 
 *, *:after, *:before {
